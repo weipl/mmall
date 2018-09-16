@@ -1,5 +1,6 @@
 package com.mmall.dao;
 
+import com.mmall.common.ServerResponse;
 import com.mmall.pojo.User;
 import org.apache.ibatis.annotations.Param;
 
@@ -31,5 +32,6 @@ public interface UserMapper {
     int checkPassword(@Param(value="password")String password,@Param("userId")Integer userId);
 
     int checkEmailByUserId(@Param(value="email")String email,@Param(value="userId")Integer userId);
+
 
 }
